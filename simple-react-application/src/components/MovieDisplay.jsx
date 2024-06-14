@@ -1,5 +1,8 @@
 // You can also destructure your props directly from the parameter list
+
+
 export default function MovieDisplay({ movie }) {
+  const loaded =() =>{
     return (
       <>
         <h1>{movie.Title}</h1>
@@ -8,4 +11,12 @@ export default function MovieDisplay({ movie }) {
         <h2>{movie.Year}</h2>
       </>
     );
+  }
+
+  const loading = () =>{
+    return <h1>No Movie to Display</h1>
+  }
+
+  return movie ? loaded() : loading()
+   
   }
