@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 
 import MovieDisplay from "./components/MovieDisplay";
@@ -7,7 +7,7 @@ import Form from "./components/Form";
 
 export default function App() {
   // Variable with your API Key
-  const apiKey = "98e3fb1f";
+  const apiKey = "ecf1dfab";
 
   // State to hold movie data
   const [movie, setMovie] = useState(null);
